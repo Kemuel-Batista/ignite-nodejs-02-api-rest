@@ -34,20 +34,3 @@ Imagine que trabalhemos com várias pessoas na equipe e todas elas digitam o có
 npm i -D eslint
 npm i @rocketseat/eslint-config -D // Padrões da rocketseat
 ```
-
-### Migrations
-
-Controle de versão do banco de dados
-
-Imagine que duas pessoas estão trabalhando numa aplicação banco de dados e ambas podem mudar a estrutura do banco de dados, uma das pessoas está trabalhando na funcionalidade de cadastro de usuario e ela vai e cria uma nova tabela de usuários, e a outra pessoa está trabalhando na funcionalidade de cadastro de produtos então ela cria uma tabela de produtos no banco de dados, quando ambas colocarem o código em produção ou uma das pessoas vai trabalhar com a funcionalidade que a outra desenvolveu elas vão ter que ficar enviando entre elas, os sqls para conseguir criar as tabelas e registros e isso é totalmente fora da caixinha quando está trabalhando em equipes é por isso que utilizamos migrations
-
-Nada mais são que todos os históricos de mudanças que foram feitas no nosso banco de dados e elas são "anotadas" com a data e horário de criação com linha do tempo
-
-O KnexJS não suporta nativamente o Typescript
-
-Para utilizar o tsx verificar o arquivo package.json na sessão de scripts
-
-Estamos utilizando o tsx para carregar o node
-```
-"knex": "node --loader tsx ",
-```
