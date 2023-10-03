@@ -1,20 +1,3 @@
-## Aplicação NodeJS 02 - Trilha Ignite Rocketseat
-
-### Requisitos funcionais e não funcionais
-
-#### RF
-
-- [x] O usuário deve poder criar uma nova transação;
-- [x] O usuário deve poder obter um resumo da sua conta;
-- [x] O usuário deve poder listar todas transações que já ocorreram;
-- [x] O usuário deve poder visualizar uma transação única;
-
-#### RN
-
-- [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito subtrairá;
-- [x] Deve ser possível identificarmos o usuário entre as requisições;
-- [x] O usuário só pode visualizar transações o qual ele criou; 
-
 ### Testes automatizados
 
 São formas de manter a confiança na hora de dar manutenção do código a longo prazo
@@ -35,3 +18,10 @@ São basicamente testes que simulam um usuário operando na nossa aplicação
 
 front-end: testes e2e, abre a página de login, digite o texto diego@gmail no campo email, clique no botão
 back-end: o usuário do back é o front-end, chamadas HTTP, WebSockets, camadas expostas
+
+#### Pirâmide de testes
+
+O primeiro tipo teste que devemos aprender é E2E, pois não dependem de nenhuma tecnologia, não dependem de nenhuma arquitetura de software, não dependem de nada, de qualquer pessoa pode fazer esse teste
+Esses teste são extremamente lentos, 2000 testes -> Testes E2E => 16 min por exemplo executando testes do nosso código antes de ir para produção e imagine que o último teste falhe e agora?
+
+Os testes unitários sempre estarão em maior quantidade em nossa aplicação e por isso ele é a base
